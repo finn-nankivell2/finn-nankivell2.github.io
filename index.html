@@ -3,94 +3,192 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>i love jerma &#x2190;</title>
+		<title>Tester web site</title>
+		<link
+				href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+				rel="stylesheet"
+				integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+				crossorigin="anonymous"
+				/>
+
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
-
-	<style type="text/css" media="screen">
-		body {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-		}
-
-		.heading-banner {
-			width: 100%;
-			background-color: #ff0000;
-			color: #ffffff;
-			text-align: center;
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.blender-explode {
-			max-width: 4em;
-			max-height: 4em;
-		}
-
-		.jerma-images {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			gap: 1em;
-		}
-
-		.funny {
-			aspect-ratio: auto;
-			max-height: 30vw;
-			transition: all 200ms;
-		}
-
-		.funny:hover {
-			transform: scale(105%);
-		}
-
-	</style>
-
 	<body>
-		<div class="heading-banner blinking">
-			<img class="blender-explode" src="https://i.gifer.com/origin/58/5869b5035b6b2993997209cccd42692b_w200.gif" alt=""/>
-			<h1>jerma webbed site</h1>
-			<img class="blender-explode" src="https://i.gifer.com/origin/58/5869b5035b6b2993997209cccd42692b_w200.gif" alt=""/>
+		<nav class="position-sticky sticky-top navbar navbar-expand-md bg-black p-4">
+			<img id="nav-logo" src="images/logo.png" class="img-fluid navbar-brand"/>
+
+			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end px-4">
+				<ul class="navbar-nav gap-2 h5">
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">ORDER</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="menu.html">MENU</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">GALLERY</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">ABOUT</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">CONTACT</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">CART</a></li>
+					<li><a class="text-white nav-item link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="#">ACCOUNT</a></li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+														 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+																																		 aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+		<div id="landing-page" class="d-flex flex-column gap-4">
+			<div id="landing-page-tint">
+				<br>
+
+				<div class="d-flex flex-column gap-4 text-center my-5 opacity">
+					<h1 class="text-white">Greenville Deli</h1>
+					<h2 class="text-white">BRINGING QUALITY MUNCH TO DUBLIN</h2>
+					<br>
+				</div>
+			</div>
 		</div>
 
-		<div class="jerma-images">
-			<img class="funny" src="https://media.tenor.com/YlDaMRwDI-YAAAAd/funny-jerma.gif" alt="Jerma explodes and turns into a cat"/>
-			<img class="funny" src="https://i.kym-cdn.com/photos/images/original/001/858/679/9eb.gif" alt="Jerma slaps himself funny image har har"/>
-			<img class="funny" src="https://media1.tenor.com/images/69206335d003a79ca95f77b64dc7c78a/tenor.gif?itemid=19817690" alt=""/>
+		<div id="quick-links" class="container-fluid justify-content-center bg-dark py-5">
+			<div class="container-sm p-0">
+				<div class="row gap-2 justify-content-center p-0">
+					<div class="col-md-3">
+						<div class="img-dimmed ratio ratio-1x1" style="background-image: url('/images/picker.jpg')">
+							<div class="d-flex justify-content-center align-items-center">
+								<h3 class="text-white">Click and Collect</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="img-dimmed ratio ratio-1x1" style="background-image: url('/images/wich.jpg')">
+							<div class="d-flex justify-content-center align-items-center">
+								<h3 class="text-white">Menu</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="img-dimmed ratio ratio-1x1" style="background-image: url('/images/bread.jpg')">
+							<div class="d-flex justify-content-center align-items-center">
+								<h3 class="text-white">Office Catering</h3>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
 
-		<div class="jerma-images">
-			<img class="funny" src="https://c.tenor.com/KLcyYVmqHhUAAAAM/jerma-re8jerma.gif" alt=""/>
-			<img class="funny" src="https://i.kym-cdn.com/photos/images/original/001/879/084/63d.gif" alt=""/>
-			<img class="funny" src="https://c.tenor.com/uv_Ps5Z2kQIAAAAM/jerma-jerma985.gif" alt=""/>
+		<div id="our-locations" class="bg-secondary container-fluid py-5">
+			<div class="container-sm d-flex flex-column gap-4 align-items-center">
+				<h3 class="text-white text-centered">Our Locations</h3>
+
+				<div class="row container-md gap-2 justify-content-center">
+					<div class="col-md-5">
+						<div class="ratio ratio-1x1"
+							 style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Greenville%20Deli,%20Rathmines+(Greenville%20Deli%20Rathmines)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe></div>
+					</div>
+					<div class="col-md-6 bg-black px-4 py-4 rounded-3 text-white my-4 d-flex flex-column gap-4">
+						<div class="d-flex justify-content-center">
+							<h3>Rathmines</h3>
+						</div>
+						<div class="d-flex flex-row gap-4 justify-content-between">
+							<div class="text-start">
+								<p class="fw-bold">Opening hours:</p>
+								<p>Mon-Thurs: 8am - 5pm</p>
+								<p>Friday & Saturday: 6am - 6pm</p>
+								<p>Sunday: 9am - 5pm</p>
+							</div>
+
+							<div class="text-start">
+								<p><span class="fw-bold">Phone:</span> 089 986 0730</p>
+								<p><span class="fw-bold">Email:</span> hi@greenvilledeli.ie</p>
+								<p><span class="fw-bold">Phone:</span> 312 Rathmines Rd Lower,<br> Rathmines, Dublin 6,<br> D06 HX53</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row container-md gap-2 justify-content-center">
+					<div class="col-md-6 bg-black px-4 py-4 rounded-3 text-white my-4 d-flex flex-column gap-4">
+						<div class="d-flex justify-content-center">
+							<h3>Inchicore</h3>
+						</div>
+						<div class="d-flex flex-row gap-4 justify-content-between">
+							<div class="text-start">
+								<p class="fw-bold">Opening hours:</p>
+								<p>Mon-Thurs: 8am - 5pm</p>
+								<p>Friday & Saturday: 6am - 6pm</p>
+								<p>Sunday: 9am - 5pm</p>
+							</div>
+
+							<div class="text-start">
+								<p><span class="fw-bold">Phone:</span> 089 986 0730</p>
+								<p><span class="fw-bold">Email:</span> hi@greenvilledeli.ie</p>
+								<p><span class="fw-bold">Phone:</span> 312 Rathmines Rd Lower,<br> Rathmines, Dublin 6,<br> D06 HX53</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="ratio ratio-1x1"
+							 style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Greenville%20Deli,%20Inchicore+(Greenville%20Deli%20Rathmines)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
+					</div>
+				</div>
+
+			</div>
 		</div>
+
+		<div class="container-fluid py-5">
+			<div class="container-sm">
+				<div class="container-sm p-5 d-flex flex-column align-items-center gap-4">
+					<h3>More Information</h3>
+					<div class="p-0 container-sm border-top border-black border-3 d-flex justify-content-start mb-4">
+						<img src="images/bread.jpg" class="img-fit ratio ratio-1x1" alt=""/>
+						<div class="m-3">
+							<h4 class="">Office Catering</h4>
+							<p class="">We offer Office Catering services to all local businesses. If you would like to get in touch regarding office catering, please email or ring us.</p>
+						</div>
+					</div>
+
+					<div class="p-0 container-sm border-top border-black border-3 d-flex justify-content-start mb-4 ">
+						<img src="images/pexels-photo-1199562.jpeg" class="img-fit p-0 ratio ratio-1x1" alt=""/>
+						<div class="m-3">
+							<h4 class="">Vegan / Vegetarian Menu</h4>
+							<p class="">Vegan and vegetarian menus are available both online and in store. If you would like more information, please see this section, or ask us in store.</p>
+						</div>
+					</div>
+
+					<div class="p-0 container-sm border-top border-black border-3 d-flex justify-content-start mb-4">
+						<img src="images/handshake.jpg" class="img-fit ratio ratio-1x1" alt=""/>
+						<div class="m-3">
+							<h4 class="">Allergens / Dietary Requirements</h4>
+							<p class="">Vegan and vegetarian menus are available both online and in store. If you would like more information, please see this section, or ask us in store.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="gallery-section" class="container-fluid py-5 bg-light p-4">
+			<div class="container-sm d-flex align-items-center flex-column gap-4 p-4">
+				<h3>Gallery</h3>
+				<div id="gallery-images" class="row gap-0">
+					<img class="p-0 col-md-4" src="images/2023-12-14_19-40.png"/>
+					<img class="p-0 col-md-4" src="images/2023-12-14_19-41.png"/>
+					<img class="p-0 col-md-4" src="images/2023-12-14_19-41_1.png"/>
+					<img class="p-0 col-md-4" src="images/2023-12-14_19-41_2.png"/>
+					<img class="p-0 col-md-4" src="images/mural.jpg"/>
+					<img class="p-0 col-md-4" src="images/2023-12-14_19-41_3.png"/>
+				</div>
+			</div>
+		</div>
+
+		<footer class="container-fluid bg-info p-5">
+			<div class="d-flex align-items-center gap-4 flex-column">
+				<img id="footer-logo" src="images/logo.png" class=""/>
+				<div class="d-flex align-items-center flex-column">
+					<p class="text-white text-centered">312 Rathmines Rd Lower</p>
+					<p class="text-white text-centered">Rathmines, Dublin 6</p>
+				</div>
+			</div>
+		</footer>
 	</body>
-
-	<script charset="utf-8" defer>
-		const BLINK_TIMER = 300;
-
-		Array.from(document.getElementsByClassName("funny")).forEach(function(e) {
-			let toggle = false;
-			function toggleBg() {
-				console.log(toggle);
-				toggle = !toggle;
-				e.style.transform = (toggle) ? "scale('95%')" : "scale('105%')";
-				setTimeout(toggleBg, BLINK_TIMER);
-			}
-
-			setTimeout(toggleBg, BLINK_TIMER);
-		});
-
-		Array.from(document.getElementsByClassName("blinking")).forEach(function(e) {
-			let toggle = false;
-			function toggleBg() {
-				console.log(toggle);
-				toggle = !toggle;
-				e.style.backgroundColor = (toggle) ? "#00ff00" : "#ff0000";
-				setTimeout(toggleBg, BLINK_TIMER);
-			}
-
-			setTimeout(toggleBg, BLINK_TIMER);
-		});
-	</script>
 </html>
