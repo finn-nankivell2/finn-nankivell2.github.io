@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Finn Nankivell Portfolio</title>
+		<link href="/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="root fill">
+			<div class="container float-center">
+				<div class="container">
+					<h1 class="portfolio-header">The Works - Waste Disposal Deckbuilder</h1>
+				</div>
+
+				<div class="container">
+					<div class="portfolio-detailed-description">
+						<p>The Works was a project I created for a college software development assignment. The brief for the assignment was to create a website or app that relates to the Sustainable Development Goals. I decided that I would develop a game centered around goal 12: Responsible Consumption and Production.</p>
+						<p>The basic concept for the game is that the player has a series of "buildings", and they must dispose of waste to - represented by hands of playing cards - by playing them to the correct building. Buildings only have so much space per turn though, and if there is nowhere to put the card, then it must be discarded, increasing the pollution counter. The higher this counter goes, the more garbage cards the player draws, and if it reaches 100%, the player loses. I built around this simple concept with different building types with extra effects, upgrades to the buildings, and a win condition that requires the player to have a strong enough economy</p>
+
+						<p>The concept for the game was both inspired by a fascination I had around the time with deckbuilding card games, and by the 2007 book <i>The Works: Anatomy of a City</i> by Kate Ascher, a detailed yet digestible breakdown of the inner workings of New York's infrastructure, from sewage treatment to electrical subsystems to general waste disposal. </p>
+						<p>Aesthetically, I was inspired by artsy mixed media games like Killer7, which led to the digitally post-processed album-art esque styling for the different cards. I made use of existing Creative Commons licensed photos, and edited them using basic image manipulation techniques such as dithering and colour blending.</p>
+						<p>The project was created using Python with the game development library Pygame, an abstraction over SDL2. I have a lot of experience with Pygame, so I felt comfortable choosing it for this project. I used a custom framework that I had written to sperate the different game elements into namespaced modules, to allow for shared access to state and functions and to make the game's systems easily extensible. Additionally, I used tools such as pytest, py-spy and MyPy to run automated tests, profile my code, and check for type violations respectively.</p>
+
+						<p>One of the project requirements was to demonstrate an understand of web technologies and database management, so for this portion of the project I used a simple Python server written using Flask for the HTTP server, and SQLite for the database. Players can submit their scores to the server when they finish a run.</p>
+
+						<p>I learned a lot from this project. This biggest challenge I faced overall was UI, as I didn't use any UI libraries or system UI, so every dialogue and menu was created from scratch using graphics primitives and basic input handling. This was a huge time sink since UI was core to the game and there was a lot to develop, and even more bugs to fix. If I was to attempt this game again, I would try to use a game engine, or at the very least an existing UI framework for Pygame.</p>
+						<p>The project's source is available at <a href="https://github.com/finn-nankivell2/software-development-y2">https://github.com/finn-nankivell2/software-development-y2</a></p>
+					</div>
+				</div>
+
+				<div class="container portfolio-page-showreel">
+					<a href="../res/showreel/the-works1.png"><img src="../res/showreel/the-works1.png" class="showreel-left" alt=""></a>
+					<a href="../res/showreel/the-works2.png"><img src="../res/showreel/the-works2.png" class="showreel-right" alt=""></a>
+					<a href="../res/showreel/the-works3.png"><img src="../res/showreel/the-works3.png" class="showreel-center" alt=""></a>
+					<a href="../res/showreel/the-works4.png"><img src="../res/showreel/the-works4.png" class="showreel-right" alt=""></a>
+					<a href="../res/showreel/the-works5.png"><img src="../res/showreel/the-works5.png" class="showreel-left" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Finn Nankivell Portfolio</title>
+		<link href="/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="root fill">
+			<div class="container float-center">
+				<div class="container">
+					<h1 class="portfolio-header">Colourminos</h1>
+				</div>
+
+				<div class="container">
+					<div class="portfolio-detailed-description">
+
+						<p>Colourminos was the first game I created in Rust, and I created it deliberately to learn more about game development in the language, as I was interested in its potential for developing performant games. Colourminos is a simple block placing game, where the player must place down various 5 block pieces (either red or cyan) on a grid, and find the most efficient placements for extra points. Every 15 pieces placed, the board clears all pieces of one colour, then after the next 15 pieces the other colour will be cleared, and so on. </p><p>If there are no more places left to put a piece, the game ends. The goal is to survive for as long as possible, and get the highest score.</p>
+
+						<p>The game uses the Raylib game development library, which is a simple C library for games programming. I used the raylib-rs binding of the library to Rust for this project, and having spent a lot of time developing with Raylib, I would say that I am confident with both the Rust binding for it, and the original C library, as I had to do some work implementing certain FFI features in the Rust binding to get my project to work.</p><p> I enjoyed learning rust and Raylib a lot, and am pleased with the better performance for my game, even if it is a fairly simple game graphically. I also enjoyed developing the algorithm for deciding when the game was over, it took a lot of work to implement and was frustrating at times but Rust's automated testing was very helpful and it was very satisfying to solve.</p>
+
+					</div>
+				</div>
+
+				<div class="container portfolio-page-showreel">
+					<a href="../res/showreel/colourminos1.png"><img src="../res/showreel/colourminos1.png" class="showreel-left" alt=""></a>
+					<a href="../res/showreel/colourminos2.png"><img src="../res/showreel/colourminos2.png" class="showreel-right" alt=""></a>
+					<a href="../res/showreel/colourminos3.png"><img src="../res/showreel/colourminos3.png" class="showreel-center" alt=""></a>
+					<a href="../res/showreel/colourminos4.png"><img src="../res/showreel/colourminos4.png" class="showreel-left" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
